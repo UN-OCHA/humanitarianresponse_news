@@ -201,7 +201,7 @@ function humanitarianresponse_news_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => 'content',
-            'image_style' => 'medium',
+            'image_style' => 'thumbnail',
           ),
           'type' => 'image',
           'weight' => '0',
