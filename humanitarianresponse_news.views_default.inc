@@ -7,7 +7,7 @@
 /**
  * Implements hook_views_default_views().
  */
-function humanitarianreponse_news_views_default_views() {
+function humanitarianresponse_news_views_default_views() {
   $export = array();
 
   $view = new view;
