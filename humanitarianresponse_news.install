@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file Installs HumanitarianResponse News
+ */
+
+/**
+ * Implements hook_install()
+ */
+function humanitarianresponse_news_install() {
+  
+  // ShareThis configuration
+  grupal_core_sharethis_configuration('buttons', 'stbc_');
+  grupal_core_sharethis_configuration('nodeType', 'news', FALSE);
+  grupal_core_sharethis_configuration('services', '"Google:google","Tweet:twitter","Facebook:facebook","ShareThis:sharethis"');
+}
+
