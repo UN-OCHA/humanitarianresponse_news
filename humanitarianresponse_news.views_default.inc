@@ -112,11 +112,9 @@ function humanitarianresponse_news_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Cluster', 'panel_pane_1');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Cluster(s) (field_news_clusters) */
   $handler->display->display_options['arguments']['field_news_clusters_tid']['id'] = 'field_news_clusters_tid';
