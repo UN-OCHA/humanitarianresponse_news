@@ -137,6 +137,21 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['arguments']['field_news_clusters_tid']['validate_options']['transform'] = 0;
   $handler->display->display_options['arguments']['field_news_clusters_tid']['break_phrase'] = 0;
   $handler->display->display_options['arguments']['field_news_clusters_tid']['not'] = 0;
+
+  /* Display: Home */
+  $handler = $view->new_display('panel_pane', 'Home', 'panel_pane_2');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = 0;
+  $handler->display->display_options['row_options']['default_field_elements'] = 1;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $translatables['news'] = array(
     t('Master'),
     t('News'),
@@ -157,6 +172,7 @@ function humanitarianresponse_news_views_default_views() {
     t('Cluster'),
     t('All'),
     t('View panes'),
+    t('Home'),
   );
   $export['news'] = $view;
 
