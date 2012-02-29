@@ -77,19 +77,19 @@ function humanitarianresponse_news_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '5',
+        'weight' => '2',
       ),
     ),
   );
 
-  // Exported field: 'node-news-field_news_clusters'
-  $fields['node-news-field_news_clusters'] = array(
+  // Exported field: 'node-news-field_clusters'
+  $fields['node-news-field_clusters'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_news_clusters',
+      'field_name' => 'field_clusters',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -126,7 +126,7 @@ function humanitarianresponse_news_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 3,
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -136,7 +136,7 @@ function humanitarianresponse_news_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_news_clusters',
+      'field_name' => 'field_clusters',
       'label' => 'Cluster(s)',
       'required' => 0,
       'settings' => array(
@@ -147,7 +147,7 @@ function humanitarianresponse_news_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '4',
+        'weight' => '1',
       ),
     ),
   );
@@ -229,19 +229,19 @@ function humanitarianresponse_news_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '10',
+        'weight' => '4',
       ),
     ),
   );
 
-  // Exported field: 'node-news-field_news_themes'
-  $fields['node-news-field_news_themes'] = array(
+  // Exported field: 'node-news-field_themes'
+  $fields['node-news-field_themes'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_news_themes',
+      'field_name' => 'field_themes',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -278,7 +278,7 @@ function humanitarianresponse_news_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 4,
+          'weight' => 6,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -288,7 +288,7 @@ function humanitarianresponse_news_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_news_themes',
+      'field_name' => 'field_themes',
       'label' => 'Theme(s)',
       'required' => 0,
       'settings' => array(
@@ -299,7 +299,7 @@ function humanitarianresponse_news_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '5',
+        'weight' => '31',
       ),
     ),
   );

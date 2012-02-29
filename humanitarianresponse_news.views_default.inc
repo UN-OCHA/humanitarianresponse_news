@@ -116,27 +116,30 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Cluster(s) (field_news_clusters) */
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['id'] = 'field_news_clusters_tid';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['table'] = 'field_data_field_news_clusters';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['field'] = 'field_news_clusters_tid';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['default_argument_type'] = 'taxonomy_tid';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['default_argument_options']['term_page'] = 1;
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['default_argument_options']['node'] = 0;
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['default_argument_options']['limit'] = 0;
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['default_argument_skip_url'] = 0;
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['specify_validation'] = 1;
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['validate_options']['vocabularies'] = array(
+  /* Contextual filter: Content: Has taxonomy term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['term_page'] = 1;
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['node'] = 0;
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['limit'] = 0;
+  $handler->display->display_options['arguments']['tid']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['tid']['specify_validation'] = 1;
+  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
     'clusters' => 'clusters',
   );
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['validate_options']['transform'] = 0;
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['break_phrase'] = 0;
-  $handler->display->display_options['arguments']['field_news_clusters_tid']['not'] = 0;
+  $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = 0;
+  $handler->display->display_options['arguments']['tid']['break_phrase'] = 0;
+  $handler->display->display_options['arguments']['tid']['add_table'] = 0;
+  $handler->display->display_options['arguments']['tid']['require_value'] = 0;
+  $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = 0;
+  $handler->display->display_options['arguments']['tid']['set_breadcrumb'] = 0;
 
   /* Display: Home */
   $handler = $view->new_display('panel_pane', 'Home', 'panel_pane_2');
