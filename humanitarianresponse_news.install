@@ -10,7 +10,7 @@ function humanitarianresponse_news_install() {
   
   // ShareThis configuration
   humanitarianresponse_core_sharethis_configuration('buttons', 'stbc_');
-  humanitarianresponse_core_sharethis_configuration('nodeType', 'news', FALSE);
+  humanitarianresponse_core_sharethis_configuration('nodeType', 'news', TRUE);
   humanitarianresponse_core_sharethis_configuration('services', '"Google:google","Tweet:twitter","Facebook:facebook","ShareThis:sharethis"');
 }
 
