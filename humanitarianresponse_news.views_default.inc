@@ -24,6 +24,7 @@ function humanitarianresponse_news_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'News';
   $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['use_more_text'] = 'View all';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -177,28 +178,6 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['arguments']['tid']['set_breadcrumb'] = 0;
   $handler->display->display_options['path'] = 'taxonomy/term/%/news';
-  $translatables['news'] = array(
-    t('Master'),
-    t('News'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('There are no news to display'),
-    t('Page'),
-    t('Feed'),
-    t('Cluster'),
-    t('All'),
-    t('View panes'),
-    t('Home'),
-    t('News Per Term'),
-    t('%1 News'),
-  );
   $export['news'] = $view;
 
   return $export;
