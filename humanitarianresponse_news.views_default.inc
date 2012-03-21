@@ -147,7 +147,6 @@ function humanitarianresponse_news_views_default_views() {
   $handler = $view->new_display('block', 'Block per term', 'block_1');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
-  $handler->display->display_options['use_more_text'] = 'View all';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'page_1';
   $handler->display->display_options['defaults']['pager'] = FALSE;
