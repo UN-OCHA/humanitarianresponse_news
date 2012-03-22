@@ -39,7 +39,7 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = FALSE;
-  $handler->display->display_options['empty']['area']['content'] = 'There are no news to display';
+  $handler->display->display_options['empty']['area']['content'] = 'There are no news';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
   $handler->display->display_options['empty']['area']['tokenize'] = 0;
   /* Field: Content: Title */
@@ -118,9 +118,6 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
   $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['tid']['title_enable'] = 1;
-  $handler->display->display_options['arguments']['tid']['title'] = '%1 News';
-  $handler->display->display_options['arguments']['tid']['breadcrumb_enable'] = 1;
   $handler->display->display_options['arguments']['tid']['breadcrumb'] = '%1 News';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
   $handler->display->display_options['arguments']['tid']['default_argument_options']['term_page'] = 1;
