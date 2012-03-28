@@ -1,5 +1,6 @@
 name = "HumanitarianResponse News"
 description = "HumanitarianResponse - News"
+core = "7.x"
 package = "Humanitarianresponse"
 project = "humanitarianresponse_news"
 dependencies[] = "hs_taxonomy"
