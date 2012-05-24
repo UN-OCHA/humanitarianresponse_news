@@ -80,14 +80,14 @@ function humanitarianresponse_news_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'media/news';
+  $handler->display->display_options['path'] = 'media-center/news';
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed');
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'media/news/rss';
+  $handler->display->display_options['path'] = 'media-center/news/rss';
   $handler->display->display_options['displays'] = array(
     'default' => 'default',
     'page' => 'page',
