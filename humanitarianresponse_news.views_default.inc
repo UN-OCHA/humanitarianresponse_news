@@ -284,6 +284,32 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['arguments']['tid']['reduce_duplicates'] = 0;
   $handler->display->display_options['arguments']['tid']['set_breadcrumb'] = 0;
   $handler->display->display_options['block_description'] = 'News per term';
+  $translatables['news'] = array(
+    t('Master'),
+    t('News'),
+    t('View all'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('There are no news'),
+    t('Page'),
+    t('more'),
+    t('Cluster'),
+    t('Feed'),
+    t('Home'),
+    t('[title] <span style="text-align: right;">[created]</span>'),
+    t('node/[nid]'),
+    t('View panes'),
+    t('News Per Term'),
+    t('All'),
+    t('Block per term'),
+    t('News per term'),
+  );
   $export['news'] = $view;
 
   return $export;
