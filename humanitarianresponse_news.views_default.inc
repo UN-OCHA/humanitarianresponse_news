@@ -240,6 +240,9 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
   $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
     'clusters' => 'clusters',
+    'coordination_hubs' => 'coordination_hubs',
+    'emergencies' => 'emergencies',
+    'funding' => 'funding',
   );
   $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = 0;
   $handler->display->display_options['arguments']['tid']['break_phrase'] = 0;
@@ -277,6 +280,9 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
   $handler->display->display_options['arguments']['tid']['validate_options']['vocabularies'] = array(
     'clusters' => 'clusters',
+    'coordination_hubs' => 'coordination_hubs',
+    'emergencies' => 'emergencies',
+    'funding' => 'funding',
   );
   $handler->display->display_options['arguments']['tid']['validate_options']['transform'] = 0;
   $handler->display->display_options['arguments']['tid']['break_phrase'] = 0;
