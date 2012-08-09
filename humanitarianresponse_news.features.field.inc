@@ -52,6 +52,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'text_default',
           'weight' => '1',
         ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -130,6 +136,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 5,
         ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -204,6 +216,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 9,
         ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -275,6 +293,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 7,
         ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -343,6 +367,12 @@ function humanitarianresponse_news_field_default_fields() {
           ),
           'type' => 'image',
           'weight' => '0',
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -430,6 +460,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 6,
         ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -497,6 +533,12 @@ function humanitarianresponse_news_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 8,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
