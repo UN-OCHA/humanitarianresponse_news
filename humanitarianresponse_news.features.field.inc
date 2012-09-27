@@ -84,7 +84,7 @@ function humanitarianresponse_news_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '2',
+        'weight' => '4',
       ),
     ),
   );
@@ -164,7 +164,7 @@ function humanitarianresponse_news_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '1',
+        'weight' => '6',
       ),
     ),
   );
@@ -244,7 +244,7 @@ function humanitarianresponse_news_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '6',
+        'weight' => '10',
       ),
     ),
   );
@@ -321,7 +321,7 @@ function humanitarianresponse_news_field_default_fields() {
         'module' => 'hs_taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_hs',
-        'weight' => '4',
+        'weight' => '12',
       ),
     ),
   );
@@ -411,7 +411,7 @@ function humanitarianresponse_news_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '3',
+        'weight' => '2',
       ),
     ),
   );
@@ -491,7 +491,7 @@ function humanitarianresponse_news_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '5',
+        'weight' => '8',
       ),
     ),
   );
