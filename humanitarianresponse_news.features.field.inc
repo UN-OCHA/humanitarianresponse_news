@@ -429,6 +429,9 @@ function humanitarianresponse_news_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_news_image',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -486,7 +489,7 @@ function humanitarianresponse_news_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_news_image',
       'label' => 'Image',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'alt_field' => 1,
         'default_image' => 0,
@@ -494,7 +497,7 @@ function humanitarianresponse_news_field_default_fields() {
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
-        'min_resolution' => '',
+        'min_resolution' => '700x560',
         'title_field' => 0,
         'user_register_form' => FALSE,
       ),
