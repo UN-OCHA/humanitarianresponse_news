@@ -130,6 +130,10 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
   $handler->display->display_options['arguments']['tid']['validate']['fail'] = 'ignore';
   $handler->display->display_options['path'] = 'taxonomy/term/%/news';
+  $handler->display->display_options['menu']['type'] = 'tab';
+  $handler->display->display_options['menu']['title'] = 'News';
+  $handler->display->display_options['menu']['weight'] = '12';
+  $handler->display->display_options['menu']['context'] = 0;
 
   /* Display: Block per term */
   $handler = $view->new_display('block', 'Block per term', 'block_1');
