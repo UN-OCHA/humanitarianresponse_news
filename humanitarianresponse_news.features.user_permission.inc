@@ -14,7 +14,7 @@ function humanitarianresponse_news_user_default_permissions() {
   $permissions['create news content'] = array(
     'name' => 'create news content',
     'roles' => array(
-      0 => 'editor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -23,7 +23,7 @@ function humanitarianresponse_news_user_default_permissions() {
   $permissions['delete own news content'] = array(
     'name' => 'delete own news content',
     'roles' => array(
-      0 => 'editor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -32,7 +32,7 @@ function humanitarianresponse_news_user_default_permissions() {
   $permissions['edit own news content'] = array(
     'name' => 'edit own news content',
     'roles' => array(
-      0 => 'editor',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
