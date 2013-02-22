@@ -597,7 +597,7 @@ function humanitarianresponse_news_field_default_fields() {
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
-        'min_resolution' => '700x560',
+        'min_resolution' => '',
         'title_field' => 0,
         'user_register_form' => FALSE,
       ),
@@ -606,9 +606,14 @@ function humanitarianresponse_news_field_default_fields() {
         'module' => 'image',
         'settings' => array(
           'filefield_sources' => array(
-            'filefield_sources' => array(),
+            'filefield_sources' => array(
+              'attach' => 0,
+              'clipboard' => 0,
+              'reference' => 0,
+              'remote' => 0,
+            ),
             'source_attach' => array(
-              'absolute' => 0,
+              'absolute' => '0',
               'attach_mode' => 'move',
               'path' => 'file_attach',
             ),
