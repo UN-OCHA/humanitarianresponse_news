@@ -9,7 +9,6 @@ dependencies[] = humanitarianresponse_clusters
 dependencies[] = humanitarianresponse_emergencies
 dependencies[] = humanitarianresponse_locations
 dependencies[] = humanitarianresponse_themes
-dependencies[] = views_slideshow
 features[ctools][] = ds:ds:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
