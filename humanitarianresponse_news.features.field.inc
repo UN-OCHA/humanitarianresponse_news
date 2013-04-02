@@ -54,6 +54,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'text_default',
           'weight' => '1',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -143,6 +149,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 5,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -224,6 +236,12 @@ function humanitarianresponse_news_field_default_fields() {
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 9,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'ical' => array(
           'label' => 'above',
@@ -307,6 +325,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 11,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -387,6 +411,12 @@ function humanitarianresponse_news_field_default_fields() {
           'settings' => array(),
           'type' => 'link_default',
           'weight' => 10,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'ical' => array(
           'label' => 'above',
@@ -486,6 +516,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => 7,
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -568,6 +604,12 @@ function humanitarianresponse_news_field_default_fields() {
           'type' => 'image',
           'weight' => '0',
         ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'ical' => array(
           'label' => 'above',
           'settings' => array(),
@@ -603,31 +645,17 @@ function humanitarianresponse_news_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'imagefield_crop',
         'settings' => array(
-          'filefield_sources' => array(
-            'filefield_sources' => array(
-              'attach' => 0,
-              'clipboard' => 0,
-              'reference' => 0,
-              'remote' => 0,
-            ),
-            'source_attach' => array(
-              'absolute' => '0',
-              'attach_mode' => 'move',
-              'path' => 'file_attach',
-            ),
-            'source_imce' => array(
-              'imce_mode' => 0,
-            ),
-            'source_reference' => array(
-              'autocomplete' => '0',
-            ),
-          ),
+          'collapsible' => '2',
+          'croparea' => '280x224',
+          'enforce_minimum' => 1,
+          'enforce_ratio' => 1,
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
+          'resolution' => '280x224',
         ),
-        'type' => 'image_image',
+        'type' => 'imagefield_crop_widget',
         'weight' => '2',
       ),
     ),
@@ -683,6 +711,12 @@ function humanitarianresponse_news_field_default_fields() {
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 6,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'ical' => array(
           'label' => 'above',
@@ -759,6 +793,12 @@ function humanitarianresponse_news_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 8,
+        ),
+        'entityreference_view_widget' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'ical' => array(
           'label' => 'above',
