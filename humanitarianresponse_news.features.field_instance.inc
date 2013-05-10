@@ -63,7 +63,7 @@ function humanitarianresponse_news_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 2,
     ),
   );
 
@@ -113,7 +113,7 @@ function humanitarianresponse_news_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 5,
     ),
   );
 
@@ -163,7 +163,7 @@ function humanitarianresponse_news_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 12,
+      'weight' => 8,
     ),
   );
 
@@ -216,7 +216,7 @@ function humanitarianresponse_news_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 13,
+      'weight' => 9,
     ),
   );
 
@@ -282,7 +282,7 @@ function humanitarianresponse_news_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 14,
+      'weight' => 10,
     ),
   );
 
@@ -332,7 +332,51 @@ function humanitarianresponse_news_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 6,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-news-field_news_funding'
+  $field_instances['node-news-field_news_funding'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 12,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_news_funding',
+    'label' => 'Funding',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 7,
     ),
   );
 
@@ -404,7 +448,7 @@ function humanitarianresponse_news_field_default_field_instances() {
         'resolution' => '280x224',
       ),
       'type' => 'imagefield_crop_widget',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -454,7 +498,7 @@ function humanitarianresponse_news_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 10,
+      'weight' => 6,
     ),
   );
 
@@ -514,6 +558,7 @@ function humanitarianresponse_news_field_default_field_instances() {
   t('Body');
   t('Clusters');
   t('Emergencies');
+  t('Funding');
   t('Image');
   t('Keywords');
   t('Linked Resources');

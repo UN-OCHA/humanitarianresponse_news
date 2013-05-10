@@ -68,7 +68,10 @@ function humanitarianresponse_news_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '50',
+          'weight' => '11',
+        ),
+        'language' => array(
+          'weight' => '3',
         ),
       ),
       'display' => array(),
