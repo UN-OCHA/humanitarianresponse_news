@@ -88,7 +88,7 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'news' => 'news',
   );
-  /* Filter criterion: Content: Clusters (field_clusters) */
+  /* Filter criterion: Field: Clusters (field_clusters) */
   $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
   $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
@@ -199,7 +199,6 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
   $handler->display->display_options['fields']['created']['custom_date_format'] = 'd-M';
   $handler->display->display_options['block_description'] = 'Home News';
-
   $translatables['news'] = array(
     t('Master'),
     t('News'),

@@ -78,7 +78,7 @@ function humanitarianresponse_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 5,
       ),
       'entityreference_view_widget' => array(
@@ -128,7 +128,7 @@ function humanitarianresponse_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 9,
       ),
       'entityreference_view_widget' => array(
@@ -167,6 +167,56 @@ function humanitarianresponse_news_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-news-field_fundings'
+  $field_instances['node-news-field_fundings'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 18,
+      ),
+      'entityreference_view_widget' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_fundings',
+    'label' => 'Funding',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 12,
+    ),
+  );
+
   // Exported field_instance: 'node-news-field_keywords'
   $field_instances['node-news-field_keywords'] = array(
     'bundle' => 'news',
@@ -178,7 +228,7 @@ function humanitarianresponse_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 11,
       ),
       'entityreference_view_widget' => array(
@@ -295,9 +345,9 @@ function humanitarianresponse_news_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
+        'module' => 'hs_taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hs_taxonomy_term_reference_hierarchical_text',
         'weight' => 7,
       ),
       'entityreference_view_widget' => array(
@@ -419,7 +469,7 @@ function humanitarianresponse_news_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 6,
       ),
       'entityreference_view_widget' => array(
@@ -508,70 +558,19 @@ function humanitarianresponse_news_field_default_field_instances() {
       'weight' => 0,
     ),
   );
-  
-  // Exported field_instance: 'node-news-field_fundings'
-  $field_instances['node-news-field_fundings'] = array(
-    'bundle' => 'news',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 18,
-      ),
-      'entityreference_view_widget' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 20,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_fundings',
-    'label' => 'Funding',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 12,
-    ),
-  );
-
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Clusters');
   t('Emergencies');
+  t('Funding');
   t('Image');
   t('Keywords');
   t('Linked Resources');
   t('Location');
   t('Theme(s)');
   t('Title');
-  t('Funding');
 
   return $field_instances;
 }
