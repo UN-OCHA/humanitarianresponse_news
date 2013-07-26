@@ -69,72 +69,6 @@ function humanitarianresponse_news_views_default_views() {
     'news' => 'news',
   );
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 0;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'news' => 'news',
-  );
-  /* Filter criterion: Field: Clusters (field_clusters) */
-  $handler->display->display_options['filters']['field_clusters_tid']['id'] = 'field_clusters_tid';
-  $handler->display->display_options['filters']['field_clusters_tid']['table'] = 'field_data_field_clusters';
-  $handler->display->display_options['filters']['field_clusters_tid']['field'] = 'field_clusters_tid';
-  $handler->display->display_options['filters']['field_clusters_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['operator_id'] = 'field_clusters_tid_op';
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['label'] = 'Clusters';
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['operator'] = 'field_clusters_tid_op';
-  $handler->display->display_options['filters']['field_clusters_tid']['expose']['identifier'] = 'field_clusters_tid';
-  $handler->display->display_options['filters']['field_clusters_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_clusters_tid']['vocabulary'] = 'clusters';
-  $handler->display->display_options['path'] = 'media-center/news';
-
-  /* Display: Feed */
-  $handler = $view->new_display('feed', 'Feed', 'feed');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['style_plugin'] = 'rss';
-  $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'media-center/news/feed';
-  $handler->display->display_options['displays'] = array(
-    'default' => 'default',
-    'page' => 'page',
-  );
-
-  /* Display: News Per Term */
-  $handler = $view->new_display('page', 'News Per Term', 'page_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Has taxonomy term ID */
-  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
-  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
-  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
-  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['tid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['tid']['validate']['type'] = 'taxonomy_term';
-  $handler->display->display_options['arguments']['tid']['validate']['fail'] = 'ignore';
-  $handler->display->display_options['path'] = 'taxonomy/term/%/news';
-  $handler->display->display_options['menu']['type'] = 'tab';
-  $handler->display->display_options['menu']['title'] = 'News';
-  $handler->display->display_options['menu']['weight'] = '12';
-  $handler->display->display_options['menu']['context'] = 0;
-
   /* Display: Block per term */
   $handler = $view->new_display('block', 'Block per term', 'block_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
@@ -198,7 +132,7 @@ function humanitarianresponse_news_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
   $handler->display->display_options['fields']['created']['custom_date_format'] = 'd-M';
-  $handler->display->display_options['block_description'] = 'Home News';
+  $handler->display->display_options['block_description'] = 'Latest';
   $translatables['news'] = array(
     t('Master'),
     t('News'),
@@ -216,18 +150,14 @@ function humanitarianresponse_news_views_default_views() {
     t('next ›'),
     t('last »'),
     t('There are no news'),
-    t('Page'),
-    t('more'),
-    t('Clusters'),
-    t('Feed'),
-    t('News Per Term'),
-    t('All'),
     t('Block per term'),
+    t('more'),
+    t('All'),
     t('News per term'),
     t('Home'),
     t('Latest News'),
     t('[title] <span style="text-align: right;">[created]</span>'),
-    t('Home News'),
+    t('Latest'),
   );
   $export['news'] = $view;
 
