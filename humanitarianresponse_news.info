@@ -32,7 +32,6 @@ features[field_instance][] = node-news-body
 features[field_instance][] = node-news-field_clusters
 features[field_instance][] = node-news-field_emergencies
 features[field_instance][] = node-news-field_fundings
-features[field_instance][] = node-news-field_keywords
 features[field_instance][] = node-news-field_linked_resources
 features[field_instance][] = node-news-field_locations
 features[field_instance][] = node-news-field_news_image
