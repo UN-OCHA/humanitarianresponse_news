@@ -111,8 +111,10 @@ function humanitarianresponse_news_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 8,
     ),
   );
@@ -161,8 +163,10 @@ function humanitarianresponse_news_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 12,
     ),
   );
@@ -211,8 +215,10 @@ function humanitarianresponse_news_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 12,
     ),
   );
@@ -326,9 +332,11 @@ function humanitarianresponse_news_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'hs_taxonomy',
-      'settings' => array(),
-      'type' => 'taxonomy_hs',
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 6,
     ),
   );
@@ -449,8 +457,10 @@ function humanitarianresponse_news_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
       'weight' => 10,
     ),
   );
@@ -513,7 +523,6 @@ function humanitarianresponse_news_field_default_field_instances() {
   t('Emergencies');
   t('Funding');
   t('Image');
-  t('Keywords');
   t('Linked Resources');
   t('Location');
   t('Theme(s)');
