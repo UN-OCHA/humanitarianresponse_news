@@ -95,6 +95,9 @@ function humanitarianresponse_news_strongarm() {
         'path' => array(
           'weight' => '50',
         ),
+        'language' => array(
+          'weight' => '5',
+        ),
       ),
       'display' => array(),
     ),
@@ -127,8 +130,9 @@ function humanitarianresponse_news_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_news';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
+    1 => 'moderation',
+    2 => 'revision',
   );
   $export['node_options_news'] = $strongarm;
 
@@ -145,6 +149,13 @@ function humanitarianresponse_news_strongarm() {
   $strongarm->name = 'node_submitted_news';
   $strongarm->value = 0;
   $export['node_submitted_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_news';
+  $strongarm->value = 'needs_review';
+  $export['workbench_moderation_default_state_news'] = $strongarm;
 
   return $export;
 }
